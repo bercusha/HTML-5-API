@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Городской Гид</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=12b526f4-1871-4137-9fa2-6cfa47023861&suggest_apikey=de0ece8e-a9e9-44c2-8b6f-945457910088&lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <section id="greet">
+        <h1>Исследуй город с нашим Гидом</h1>
+        <p>Добавляйте места, стройте маршруты и проверяйте погоду!</p>
+    </section>
+    <section id="map-section">
+        <div id="map" style="width: 90%; height: 550px"></div>
+        <form id="markerForm">
+            <input type="text" id="searchInput" placeholder="Введите место">
+            <button type="submit">Найти и добавить</button>
+        </form>
+        <button onclick="deleteMarkers()">Очистить маркеры</button>
+        <div id="location"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
